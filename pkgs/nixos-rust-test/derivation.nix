@@ -1,6 +1,6 @@
-{ lib, rustPlatform, fetchFromGitHub }:
+{ lib, customRustPlatform, fetchFromGitHub }:
 
-rustPlatform.buildRustPackage rec {
+customRustPlatform.buildRustPackage rec {
   pname = "nixos-rust-test";
   version = "0.1.0";
 
